@@ -1,12 +1,133 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import { styles } from "../../styles/notifications.styles";
+import { COLORS } from "@/constants/theme";
+import { Ionicons } from "@expo/vector-icons";
 
-const notification = () => {
+// Mock data for notifications
+const NOTIFICATIONS = [
+  {
+    id: "1",
+    username: "programmer.dude",
+    avatar: "https://via.placeholder.com/150",
+    action: "commented: 'Dude this is sick!'",
+    timeAgo: "about 8 hours ago",
+    postImage: "https://via.placeholder.com/150",
+    expanded: false,
+  },
+  {
+    id: "2",
+    username: "programmer.dude",
+    avatar: "https://via.placeholder.com/150",
+    action: "liked your post",
+    timeAgo: "about 8 hours ago",
+    postImage: "https://via.placeholder.com/150",
+    expanded: false,
+  },
+  {
+    id: "3",
+    username: "r.yandoe",
+    avatar: "https://via.placeholder.com/150",
+    action: "started following you",
+    timeAgo: "1 day ago",
+    postImage: null,
+    expanded: false,
+  },
+  {
+    id: "4",
+    username: "r.yandoe",
+    avatar: "https://via.placeholder.com/150",
+    action: "liked your post",
+    timeAgo: "1 day ago",
+    postImage: "https://via.placeholder.com/150",
+    expanded: false,
+  },
+  {
+    id: "5",
+    username: "bob.doe",
+    avatar: "https://via.placeholder.com/150",
+    action: "liked your post",
+    timeAgo: "2 days ago",
+    postImage: "https://via.placeholder.com/150",
+    expanded: false,
+  },
+  {
+    id: "6",
+    username: "programmer.dude",
+    avatar: "https://via.placeholder.com/150",
+    action: "liked your post",
+    timeAgo: "2 days ago",
+    postImage: "https://via.placeholder.com/150",
+    expanded: false,
+  },
+];
+
+export default function notification() {
+  const [notifications, setNotifications] = useState(NOTIFICATIONS);
+
+  // Toggle notification expansion
+  const toggleNotification = (id: string) => {
+    setNotifications((prevNotifications) =>
+      prevNotifications.map((notification) =>
+        notification.id === id
+          ? { ...notification, expanded: !notification.expanded }
+          : notification
+      )
+    );
+  };
+
   return (
-    <View>
-      <Text>notification</Text>
-    </View>
-  )
-}
+    <View style={styles.container}>
+      {/* Header */}
+      <View style={styles.header}>
+        <Text style={styles.headerTitle}>Notifications</Text>
+      </View>
 
-export default notification
+      {/* Notifications List */}
+      <ScrollView style={styles.listContainer}>
+        {notifications.map((notification) => (
+          <TouchableOpacity
+            key={notification.id}
+            style={styles.notificationItem}
+            onPress={() => toggleNotification(notification.id)}
+          >
+            {/* Notification Content */}
+            <View style={styles.notificationContent}>
+              {/* Avatar */}
+              <View style={styles.avatarContainer}>
+                <Image
+                  source={{ uri: notification.avatar }}
+                  style={styles.avatar}
+                />
+                {notification.postImage && (
+                  <View style={styles.iconBadge}>
+                    <Ionicons
+                      name={notification.action.includes("commented") ? "chatbubble" : "heart"}
+                      size={12}
+                      color={COLORS.primary}
+                    />
+                  </View>
+                )}
+              </View>
+
+              {/* Notification Info */}
+              <View style={styles.notificationInfo}>
+                <Text style={styles.username}>{notification.username}</Text>
+                <Text style={styles.action}>{notification.action}</Text>
+                <Text style={styles.timeAgo}>{notification.timeAgo}</Text>
+              </View>
+            </View>
+
+            {/* Post Image (if applicable) */}
+            {notification.postImage && (
+              <Image
+                source={{ uri: notification.postImage }}
+                style={styles.postImage}
+              />
+            )}
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
+    </View>
+  );
+}

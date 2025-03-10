@@ -1,50 +1,121 @@
-# Welcome to your Expo app 👋
+# Ideagram - Social Media App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ideagram is a modern social media application built with **React Native**, **Clerk** for authentication, and **Convex** for the database. It allows users to create posts, follow others, like and comment on posts, and save bookmarks. The app features a clean and intuitive UI with infinite scrolling, real-time updates, and seamless navigation.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
+
+- **Authentication**: Secure user authentication powered by **Clerk**.
+- **Database**: Real-time database management using **Convex**.
+- **Feed**: Infinite scroll feed with posts (images and videos).
+- **Notifications**: Real-time notifications for likes, comments, and follows.
+- **Bookmarks**: Save and organize your favorite posts.
+- **Profile**: Edit your profile, view your posts, and manage followers.
+- **Responsive Design**: Optimized for both mobile and tablet devices.
+
+---
+
+## Technologies Used
+
+- **Frontend**: React Native, Expo
+- **Authentication**: Clerk
+- **Database**: Convex
+- **Styling**: React Native StyleSheet
+- **Icons**: Expo Vector Icons
+
+---
+
+## Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+- **Node.js** (v16 or higher)
+- **Clerk Account**: Sign up at [Clerk](https://clerk.dev/) and create a project.
+- **Convex Account**: Sign up at [Convex](https://convex.dev/) and create a database.
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/ideagram.git
+   cd ideagram
+   ```
+
+2. **Install Dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set Up Environment Variables**
 
-   ```bash
-    npx expo start
+   Create a `.env` file in the root directory and add the following:
+
+   ```env
+   CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CONVEX_URL=your_convex_url
    ```
 
-In the output, you'll find options to open the app in a
+   Replace `your_clerk_publishable_key` and `your_convex_url` with your actual Clerk and Convex credentials.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+4. **Start Convex**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   Run the following command to start the Convex development server:
 
-## Get a fresh project
+   ```bash
+   npx convex dev
+   ```
 
-When you're ready, run:
+5. **Run the App**
 
-```bash
-npm run reset-project
-```
+   Start the Expo development server:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+   ```bash
+   npx expo start
+   ```
 
-## Learn more
+   Scan the QR code with the Expo Go app (available on iOS and Android) to run the app on your device.
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+## Authentication with Clerk
 
-Join our community of developers creating universal apps.
+Clerk handles user authentication in this app. To set up Clerk:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Sign up at [Clerk](https://clerk.dev/) and create a project.
+2. Add your `CLERK_PUBLISHABLE_KEY` to the `.env` file.
+3. Configure authentication providers (e.g., Google, GitHub) in the Clerk dashboard.
+
+---
+
+## Database with Convex
+
+Convex powers the real-time database for this app. To set up Convex:
+
+1. Sign up at [Convex](https://convex.dev/) and create a database.
+2. Add your `CONVEX_URL` to the `.env` file.
+3. Define your database schema and functions in the `convex/` directory.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+

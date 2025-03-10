@@ -18,7 +18,105 @@ const POSTS = [
     caption: "i luv programming",
     timeAgo: "about 8 hours ago",
   },
-  // Add more posts as needed
+  {
+    "id": "2",
+    "username": "coder_girl",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 5,
+    "caption": "Learning to code is my passion",
+    "timeAgo": "about 2 hours ago"
+  },
+
+{
+    "id": "3",
+    "username": "tech_noob",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 10,
+    "caption": "Just built my first website",
+    "timeAgo": "about 1 day ago"
+  },
+
+{
+    "id": "4",
+    "username": "dev_team",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 2,
+    "caption": "Just deployed our new project",
+    "timeAgo": "about 6 hours ago"
+  },
+
+{
+    "id": "5",
+    "username": "programming_pro",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 20,
+    "caption": "Just released a new library",
+    "timeAgo": "about 1 week ago"
+  },
+
+{
+    "id": "6",
+    "username": "newbie_22",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 8,
+    "caption": "Just started learning Python",
+    "timeAgo": "about 4 hours ago"
+  },
+  {
+    "id": "7",
+    "username": "java_jedi",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 15,
+    "caption": "Just completed my first Java project",
+    "timeAgo": "about 3 days ago"
+  },
+
+{
+    "id": "8",
+    "username": "csharp_coder",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 12,
+    "caption": "Learning C# for my new job",
+    "timeAgo": "about 2 weeks ago"
+  },
+
+{
+    "id": "9",
+    "username": "swift_savvy",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 18,
+    "caption": "Just built a new iOS app",
+    "timeAgo": "about 5 days ago"
+  },
+
+{
+    "id": "10",
+    "username": "ruby_rookie",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 6,
+    "caption": "Learning Ruby on Rails",
+    "timeAgo": "about 1 month ago"
+  },
+
+{
+    "id": "11",
+    "username": "javascript_juggler",
+    "avatar": "https://via.placeholder.com/150",
+    "image": "https://via.placeholder.com/400",
+    "likes": 25,
+    "caption": "Just completed a React project",
+    "timeAgo": "about 2 months ago"
+  }
+  
 ];
 
 export default function Feed() {
