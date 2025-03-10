@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 2,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 3,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 4,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 5,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 6,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 7,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg"
+  },
+  {
+    "id": 8,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 10,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg"
+  },
+  {
+    "id": 11,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 12,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 13,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 14,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg"
+  },
+  {
+    "id": 20,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 110,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 10,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 122,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 145,
+    "comments": [],
+    "media": "https://example.com/video1.mp4" 
+  },
+  {
+    "id": 341,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 310,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 542,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4"
+  },
+  {
+    "id": 451,
+    "author": "User 1",
+    "content": "This is post number 1",
+    "likes": 5410,
+    "comments": [],
+    "media": "https://example.com/image1.jpg" 
+  },
+  {
+    "id": 672,
+    "author": "User 2",
+    "content": "This is post number 2",
+    "likes": 195,
+    "comments": [],
+    "media": "https://example.com/video1.mp4"
+  },
+  {
+    "id": 1,
+    "author": "Emily Carter",
+    "content": "Just finished my morning run! Feeling energized and ready to tackle the day. 🏃‍♀️💪",
+    "likes": 23,
+    "comments": [],
+    "media": "https://example.com/image1.jpg"
+  },
+  {
+    "id": 2,
+    "author": "James Patel",
+    "content": "Finally fixed that leaky faucet. DIY wins today! 🛠️",
+    "likes": 15,
+    "comments": [],
+    "media": "https://example.com/video1.mp4"
+  },
+  {
+    "id": 903,
+    "author": "Sophia Nguyen",
+    "content": "Baking cookies with my niece today. The house smells amazing! 🍪❤️",
+    "likes": 34,
+    "comments": [],
+    "media": "https://example.com/image2.jpg"
+  },
+  {
+    "id":874,
+    "author": "Michael O’Connor",
+    "content": "Caught the most stunning sunset at the beach. Nature is breathtaking. 🌅",
+    "likes": 45,
+    "comments": [],
+    "media": "https://example.com/image3.jpg"
+  },
+  {
+    "id": 598,
+    "author": "Aisha Mohammed",
+    "content": "Started reading 'The Midnight Library' by Matt Haig. Already hooked! 📚",
+    "likes": 12,
+    "comments": [],
+    "media": "https://example.com/image4.jpg"
+  },
+  {
+    "id": 456,
+    "author": "Daniel Kim",
+    "content": "Just finished a 10k run. My legs are tired but my mind is clear. 🏃‍♂️",
+    "likes": 29,
+    "comments": [],
+    "media": "https://example.com/video2.mp4"
+  },
+  {
+    "id": 897,
+    "author": "Maria Gonzalez",
+    "content": "Spent the day gardening. My tomatoes are finally growing! 🌱🍅",
+    "likes": 18,
+    "comments": [],
+    "media": "https://example.com/image5.jpg"
+  },
+  {
+    "id": 68,
+    "author": "David Smith",
+    "content": "Took my dog to the park today. He’s the happiest pup ever! 🐕",
+    "likes": 56,
+    "comments": [],
+    "media": "https://example.com/image6.jpg"
+  },
+  {
+    "id": 99,
+    "author": "Fatima Ali",
+    "content": "Tried a new recipe today—homemade pasta! It turned out great. 🍝",
+    "likes": 27,
+    "comments": [],
+    "media": "https://example.com/video3.mp4"
+  },
+  {
+    "id": 170,
+    "author": "Chris Johnson",
+    "content": "Went hiking this weekend. The views were worth every step. �",
+    "likes": 38,
+    "comments": [],
+    "media": "https://example.com/image7.jpg"
+  }
+
+]

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ideagram",
-    "slug": "ideagram",
+    "name": "igram",
+    "slug": "igram",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -36,6 +36,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    }, 
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      },
+      "clerkPublishableKey": "your-clerk-publishable-key"
     }
   }
 }
