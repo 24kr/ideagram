@@ -10,19 +10,19 @@ import Story from "@/components/Story";
 // Mock data for posts
 const POSTS = [
   {
-    id: "1",
-    username: "programmer.dude",
-    avatar: "https://via.placeholder.com/150",
-    image: "https://via.placeholder.com/400",
-    likes: 1,
-    caption: "i luv programming",
-    timeAgo: "about 8 hours ago",
+    "id": "1",
+    "username": "programmer.dude",
+    "avatar": "https://demo-source.imgix.net/bucket_hat.jpg",
+    "image": "https://demo-source.imgix.net/snowboard.jpg",
+    "likes": 1,
+    "caption": "i luv programming",
+    "timeAgo": "about 8 hours ago",
   },
   {
     "id": "2",
     "username": "coder_girl",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+    "avatar": "https://demo-source.imgix.net/puppy.jpg",
+    "image": "https://demo-source.imgix.net/house.jpg",
     "likes": 5,
     "caption": "Learning to code is my passion",
     "timeAgo": "about 2 hours ago"
@@ -31,8 +31,8 @@ const POSTS = [
 {
     "id": "3",
     "username": "tech_noob",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+  "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+  "image": "https://demo-source.imgix.net/canyon.jpg",
     "likes": 10,
     "caption": "Just built my first website",
     "timeAgo": "about 1 day ago"
@@ -41,8 +41,8 @@ const POSTS = [
 {
     "id": "4",
     "username": "dev_team",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+  "avatar": "https://demo-source.imgix.net/snowboard.jpg",
+  "image": "https://demo-source.imgix.net/scooter.jpg",
     "likes": 2,
     "caption": "Just deployed our new project",
     "timeAgo": "about 6 hours ago"
@@ -51,8 +51,8 @@ const POSTS = [
 {
     "id": "5",
     "username": "programming_pro",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+  "avatar": "https://demo-source.imgix.net/group_photo.jpg",
+  "image": "https://demo-source.imgix.net/mountains.jpg",
     "likes": 20,
     "caption": "Just released a new library",
     "timeAgo": "about 1 week ago"
@@ -61,8 +61,8 @@ const POSTS = [
 {
     "id": "6",
     "username": "newbie_22",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+  "avatar": "https://demo-source.imgix.net/head_shot.jpg",
+  "image": "https://demo-source.imgix.net/model.jpg",
     "likes": 8,
     "caption": "Just started learning Python",
     "timeAgo": "about 4 hours ago"
@@ -70,8 +70,8 @@ const POSTS = [
   {
     "id": "7",
     "username": "java_jedi",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+    "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop",
+    "image": "https://demo-source.imgix.net/plant.jpg",
     "likes": 15,
     "caption": "Just completed my first Java project",
     "timeAgo": "about 3 days ago"
@@ -80,7 +80,7 @@ const POSTS = [
 {
     "id": "8",
     "username": "csharp_coder",
-    "avatar": "https://via.placeholder.com/150",
+  "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
     "image": "https://via.placeholder.com/400",
     "likes": 12,
     "caption": "Learning C# for my new job",
@@ -90,7 +90,7 @@ const POSTS = [
 {
     "id": "9",
     "username": "swift_savvy",
-    "avatar": "https://via.placeholder.com/150",
+  "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     "image": "https://via.placeholder.com/400",
     "likes": 18,
     "caption": "Just built a new iOS app",

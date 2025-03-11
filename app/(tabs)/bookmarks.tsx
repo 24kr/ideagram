@@ -8,37 +8,37 @@ const BOOKMARKS = [
   {
     id: "1",
     type: "image",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/house.jpg",
     timestamp: "20:03",
   },
   {
     id: "2",
     type: "video",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/snowboard.jpg",
     timestamp: "19:45",
   },
   {
     id: "3",
     type: "image",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/sneakers.jpg",
     timestamp: "18:22",
   },
   {
     id: "4",
     type: "image",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/model.jpg",
     timestamp: "17:59",
   },
   {
     id: "5",
     type: "video",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/mountains.jpg",
     timestamp: "16:30",
   },
   {
     id: "6",
     type: "image",
-    uri: "https://via.placeholder.com/400",
+    uri: "https://demo-source.imgix.net/scooter.jpg",
     timestamp: "15:10",
   },
 ];
