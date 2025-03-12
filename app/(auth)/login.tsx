@@ -30,7 +30,7 @@ const login = () => {
           <Ionicons name="chatbox" size={40} color={COLORS.primary} />
         </View>
         <Text style={styles.appName}>Ideagram</Text>
-        <Text style={styles.tagline}>Connect and Share</Text>
+        <Text style={styles.tagline}>Chart and Connect</Text>
       </View>
       {/* ILLUSTRATION*/}
       <View style={styles.illustrationContainer}>

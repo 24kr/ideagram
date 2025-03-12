@@ -2,24 +2,18 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, FlatList } from "react-native";
 import { styles } from "../../styles/profile.styles";
 import { Ionicons } from "@expo/vector-icons";
-import { useNavigation } from "@react-navigation/native";
-import { COLORS } from "@/constants/theme";
-import { ProfileStack } from "../../components/ProfileStack"
+import { NavigationProp } from "@react-navigation/native";
 
-const Profile = () => {
-  const navigation = useNavigation();
-
+const profile = ({ navigation }: { navigation: NavigationProp<any> }) => {
   const user = {
-    username: "burakork",
-    name: "Burak Orkmez",
-    bio: "Test",
-    avatar: require("../../assets/profile.png"),
+    username: "Oodleb_77",
+    name: "Oodleb Mohammad",
+    bio: "Wild life ",
+    avatar: require("../../assets/profile.png"), // Ensure the image is in assets
     posts: [
-      require("../../assets/post1.jpeg"), 
+      require("../../assets/post1.jpeg"), // Replace with actual post images
       require("../../assets/post2.jpeg"),
     ],
-    followers: 946000,
-    following: 24,
   };
 
   return (
@@ -27,14 +21,7 @@ const Profile = () => {
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.username}>{user.username}</Text>
-        <View style={styles.headerRight}>
-          <TouchableOpacity onPress={() => navigation.navigate("Settings")}>
-            <Ionicons name="settings-outline" size={24} color={COLORS.white} style={styles.headerIcon} />
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Ionicons name="add-outline" size={24} color={COLORS.white} style={styles.headerIcon} />
-          </TouchableOpacity>
-        </View>
+        <Ionicons name="add-outline" size={24} color="white" style={styles.headerIcon} />
       </View>
 
       {/* Profile Info */}
@@ -49,11 +36,11 @@ const Profile = () => {
               <Text style={styles.statLabel}>Posts</Text>
             </View>
             <View style={styles.statItem}>
-              <Text style={styles.statNumber}>{user.followers}</Text>
+              <Text style={styles.statNumber}>946.K</Text>
               <Text style={styles.statLabel}>Followers</Text>
             </View>
             <View style={styles.statItem}>
-              <Text style={styles.statNumber}>{user.following}</Text>
+              <Text style={styles.statNumber}>24</Text>
               <Text style={styles.statLabel}>Following</Text>
             </View>
           </View>
@@ -61,14 +48,8 @@ const Profile = () => {
         <Text style={styles.name}>{user.name}</Text>
         <Text style={styles.bio}>{user.bio}</Text>
         <View style={styles.actionButtons}>
-          <TouchableOpacity
-            style={styles.editButton}
-            onPress={() => navigation.navigate("EditProfile")}
-          >
+          <TouchableOpacity style={styles.editButton} onPress={()=>navigation.navigate("edit")}>
             <Text style={styles.editButtonText}>Edit Profile</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.shareButton}>
-            <Ionicons name="share-outline" size={20} color={COLORS.white} />
           </TouchableOpacity>
         </View>
       </View>
@@ -88,4 +69,5 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+
+export default profile;

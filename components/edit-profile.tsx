@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
-import { styles } from "../../styles/profile.styles";
+import { styles } from "../styles/profile.styles";
 import { useNavigation } from "@react-navigation/native";
 
 const EditProfile = () => {

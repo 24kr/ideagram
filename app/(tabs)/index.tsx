@@ -7,24 +7,23 @@ import { Ionicons } from "@expo/vector-icons";
 import { STORIES } from "@/constants/mock-data";
 import Story from "@/components/Story";
 
-// Mock data for posts
 const POSTS = [
   {
     "id": "1",
-    "username": "programmer.dude",
+    "username": "Josh Hartford",
     "avatar": "https://demo-source.imgix.net/bucket_hat.jpg",
     "image": "https://demo-source.imgix.net/snowboard.jpg",
     "likes": 1,
-    "caption": "i luv programming",
+    "caption": "skiiiiiiii sky won't be the limit",
     "timeAgo": "about 8 hours ago",
   },
   {
     "id": "2",
-    "username": "coder_girl",
+    "username": "puppyKerkas_00",
     "avatar": "https://demo-source.imgix.net/puppy.jpg",
     "image": "https://demo-source.imgix.net/house.jpg",
     "likes": 5,
-    "caption": "Learning to code is my passion",
+    "caption": "You future home",
     "timeAgo": "about 2 hours ago"
   },
 
@@ -81,7 +80,7 @@ const POSTS = [
     "id": "8",
     "username": "csharp_coder",
   "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
-    "image": "https://via.placeholder.com/400",
+  "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop",
     "likes": 12,
     "caption": "Learning C# for my new job",
     "timeAgo": "about 2 weeks ago"
@@ -91,7 +90,7 @@ const POSTS = [
     "id": "9",
     "username": "swift_savvy",
   "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    "image": "https://via.placeholder.com/400",
+  "image": "https://demo-source.imgix.net/snowboard.jpg",
     "likes": 18,
     "caption": "Just built a new iOS app",
     "timeAgo": "about 5 days ago"
@@ -100,8 +99,8 @@ const POSTS = [
 {
     "id": "10",
     "username": "ruby_rookie",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+  "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop",
     "likes": 6,
     "caption": "Learning Ruby on Rails",
     "timeAgo": "about 1 month ago"
@@ -110,8 +109,8 @@ const POSTS = [
 {
     "id": "11",
     "username": "javascript_juggler",
-    "avatar": "https://via.placeholder.com/150",
-    "image": "https://via.placeholder.com/400",
+    "avatar": "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1701615004837-4008573b6652?w=400&h=400&fit=crop",
     "likes": 25,
     "caption": "Just completed a React project",
     "timeAgo": "about 2 months ago"
@@ -129,10 +128,10 @@ export default function Feed() {
     if (loading) return;
     setLoading(true);
     setTimeout(() => {
-      const newPosts = [...posts, ...POSTS]; // Append more posts
+      const newPosts = [...posts, ...POSTS]; 
       setPosts(newPosts);
       setLoading(false);
-    }, 1000); // Simulate network delay
+    }, 1000); 
   };
 
   return (
@@ -186,7 +185,7 @@ export default function Feed() {
                   <Ionicons name="chatbubble-outline" size={24} color={COLORS.white} />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Ionicons name="paper-plane-outline" size={24} color={COLORS.white} />
+                  <Ionicons name="share-social-outline" size={24} color={COLORS.white} />
                 </TouchableOpacity>
               </View>
               <TouchableOpacity>
