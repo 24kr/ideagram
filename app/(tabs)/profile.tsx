@@ -9,9 +9,9 @@ const profile = ({ navigation }: { navigation: NavigationProp<any> }) => {
     username: "Oodleb_77",
     name: "Oodleb Mohammad",
     bio: "Wild life ",
-    avatar: require("../../assets/profile.png"), // Ensure the image is in assets
+    avatar: require("../../assets/profile.png"),
     posts: [
-      require("../../assets/post1.jpeg"), // Replace with actual post images
+      require("../../assets/post1.jpeg"), 
       require("../../assets/post2.jpeg"),
     ],
   };
@@ -48,7 +48,7 @@ const profile = ({ navigation }: { navigation: NavigationProp<any> }) => {
         <Text style={styles.name}>{user.name}</Text>
         <Text style={styles.bio}>{user.bio}</Text>
         <View style={styles.actionButtons}>
-          <TouchableOpacity style={styles.editButton} onPress={()=>navigation.navigate("edit")}>
+          <TouchableOpacity style={styles.editButton} onPress={() => navigation.navigate("edit")}>
             <Text style={styles.editButtonText}>Edit Profile</Text>
           </TouchableOpacity>
         </View>

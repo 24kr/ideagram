@@ -3,7 +3,6 @@ import { View, Text, Image, FlatList, TouchableOpacity, StyleSheet } from "react
 import { COLORS } from "@/constants/theme";
 import { Ionicons } from "@expo/vector-icons";
 
-// Mock data for bookmarked posts
 const BOOKMARKS = [
   {
     id: "1",
@@ -43,7 +42,6 @@ const BOOKMARKS = [
   },
 ];
 
-// Styles for the bookmarks screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,

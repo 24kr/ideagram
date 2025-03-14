@@ -6,13 +6,11 @@ import { useState } from "react";
 import { COLORS } from '@/constants/theme';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from '@/styles/create.styles';
-// import * as ImagePicker from "expo-image-multiple-picker"
 import * as ImagePicker from "expo-image-picker"
 import * as FileSystem from "expo-file-system"
 import { Image } from "expo-image"
 import { useMutation } from 'convex/react';
 import { api } from '@/convex/_generated/api';
-// import { ScrollView } from 'react-native-reanimated/lib/typescript/Animated';
 
 const create = () => {
   const router = useRouter();
@@ -38,16 +36,16 @@ const create = () => {
     try {
       setIsSharing(true);
       const uploadUrl = await generateUploadUrl();
-      const UploadResult = await FileSystem.uploadAsync(uploadUrl, 
-        selectedImage,{
-          httpMethod: 'POST',
-          uploadType:FileSystem.FileSystemUploadType.BINARY_CONTENT,
-          mimeType:"image/jpeg",
-        }
+      const UploadResult = await FileSystem.uploadAsync(uploadUrl,
+        selectedImage, {
+        httpMethod: 'POST',
+        uploadType: FileSystem.FileSystemUploadType.BINARY_CONTENT,
+        mimeType: "image/jpeg",
+      }
       );
       if (UploadResult.status !== 200) throw new Error("Upload failed");
-      const {storageId} = JSON.parse(UploadResult.body);
-      await createPost({storageId, caption});
+      const { storageId } = JSON.parse(UploadResult.body);
+      await createPost({ storageId, caption });
       router.push("/(tabs)");
     }
     catch (error) {
@@ -100,7 +98,7 @@ const create = () => {
           <TouchableOpacity
             style={[styles.shareButton, isSharing && styles.shareButtonDisabled]}
             disabled={isSharing || !selectedImage}
-            onPress={handleShare} 
+            onPress={handleShare}
           >
             {isSharing ? (
               <ActivityIndicator size="small" color={COLORS.primary} />

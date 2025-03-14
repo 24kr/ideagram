@@ -28,12 +28,12 @@ export const createPost = mutation({
             imageUrl,
             caption: args.caption,
             storageId: args.storageId,
-            likes:0,
-            comments:0,
+            likes: 0,
+            comments: 0,
 
         });
         await ctx.db.patch(currentUser._id, {
-            posts:currentUser.posts+1,
+            posts: currentUser.posts + 1,
         });
 
         return postId;

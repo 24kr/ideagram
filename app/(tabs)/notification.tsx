@@ -4,7 +4,6 @@ import { styles } from "../../styles/notifications.styles";
 import { COLORS } from "@/constants/theme";
 import { Ionicons } from "@expo/vector-icons";
 
-// Mock data for notifications
 const NOTIFICATIONS = [
   {
     id: "1",

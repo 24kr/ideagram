@@ -1,10 +1,9 @@
-// navigation/ProfileStack.js
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import Profile from "../app/(tabs)/profile"; // Adjust the path as needed
-import EditProfile from "../components/edit-profile"; // Adjust the path as needed
-import Settings from "../components/settings"; // Adjust the path as needed
-import { ProfileStackParamList } from "../constants/types"; // Import the types
+import Profile from "../app/(tabs)/profile"; 
+import EditProfile from "../components/edit-profile";
+import Settings from "../components/settings";
+import { ProfileStackParamList } from "../constants/types";
 
 const Stack = createStackNavigator<ProfileStackParamList>();
 

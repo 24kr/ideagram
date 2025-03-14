@@ -2,8 +2,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import profile from "./(tabs)/profile";
 import EditProfile from "@/components/edit-profile";
-// import Feed from "./(tabs)/index";
-// import Comments from "../components/comments";
 
 const Stack = createStackNavigator();
 
